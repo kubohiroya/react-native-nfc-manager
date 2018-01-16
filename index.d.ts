@@ -30,6 +30,7 @@ declare module 'react-native-nfc-manager' {
 	interface NfcManager {
 
 		start(options?: StartOptions): Promise<any>;
+		stop(): void;
 
 		isEnabled(): Promise<boolean>;
 
